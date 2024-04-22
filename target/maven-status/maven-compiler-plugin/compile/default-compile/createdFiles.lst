@@ -1,0 +1,5 @@
+com\classes\FileHandler.class
+com\mycompany\translatorproject\JakartaRestConfiguration.class
+com\servlets\TranslationController.class
+com\mycompany\translatorproject\resources\JakartaEE10Resource.class
+com\classes\TranslationModel.class
