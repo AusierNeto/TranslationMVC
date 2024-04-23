@@ -27,18 +27,8 @@ public class TranslationController extends HttpServlet {
         
         TranslationModel t = new TranslationModel(inputWord);
         
-        response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Translation</title>");  
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>The translation of " + inputWord +" is " + t.getWordTranslation() + "</h1>");
-            out.println("</body>");
-            out.println("</html>"); // TODO Change this to JSP File
-        }
+        request.setAttribute("translation", t.getWordTranslation());
+        request.getRequestDispatcher("TranslationResponse.jsp").forward(request, response);
     }
     
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
