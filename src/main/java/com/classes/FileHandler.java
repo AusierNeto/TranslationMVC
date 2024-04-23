@@ -125,7 +125,7 @@ public class FileHandler {
     public static String getWordTranslation(String inputWord) {
         List<String> fileLines = readFileLines();
         for (String line : fileLines) {
-            if (line.contains(inputWord)) {
+            if (line.split(" ")[0].equals(inputWord)) {
                 return line.split(" ")[1];
             }
         }

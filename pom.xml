@@ -88,6 +88,7 @@
                     <path>/TranslatorProject</path>
                 </configuration>
             </plugin>
+            <!-- Plugin exec-maven-plugin -->
         </plugins>
     </build>
 </project>
