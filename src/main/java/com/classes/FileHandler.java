@@ -119,7 +119,16 @@ public class FileHandler {
         FileHandler.addTranslationToFile("Canvas", "Quadro");
         FileHandler.addTranslationToFile("Keys", "Chaves");
         FileHandler.addTranslationToFile("Snake", "Cobra");
-        // TODO Add translations until there is 20
+        FileHandler.addTranslationToFile("Desk", "Escrivaninha");
+        FileHandler.addTranslationToFile("Table", "Mesa");
+        FileHandler.addTranslationToFile("Mobile Phone", "Celular");
+        FileHandler.addTranslationToFile("Watch", "Relógio");
+        FileHandler.addTranslationToFile("Cube", "Cubo");
+        FileHandler.addTranslationToFile("Controller", "Controle");
+        FileHandler.addTranslationToFile("Knife", "Faca");
+        FileHandler.addTranslationToFile("Screen", "Tela");
+        FileHandler.addTranslationToFile("Whale", "Baleia");
+        FileHandler.addTranslationToFile("Window", "Janela");
     }
     
     public static String getWordTranslation(String inputWord) {
